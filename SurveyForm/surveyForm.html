@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styleForm.css">
+	<title>FCC: Survey Form</title>
+</head>
+<body>
+	<header>
+		<h1 id="title">Spaces Survey Form</h1>
+		<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+	</header>
+	<main>
+		<form method="POST" id="survey-form">
+
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label>
+				<input type="text" name="name" id="name" class="same-size" placeholder="Enter your name" required >
+			</div>
+			
+
+			<div class="form-group">
+				<label id="email-label" for="email">Email</label>
+				<input type="email" name="email" id="email" class="same-size" placeholder="Enter your Email"required>
+			</div>
+			
+			<div class="form-group">
+				<label id="number-label" for="age">Age(optional)</label>
+				<input type="number" name="age" id="number" class="same-size" min="18" max="99" placeholder="Age" class="same-size"><br>
+			</div>
+			<div class="form-group">
+				<p>Which option best describes your current role?</p>
+				<select id="dropDown" class="same-size">
+					<option>Select your current role</option>
+					<option>Student</option>
+					<option>Full Time Job</option>
+					<option>Full Time Learner</option>
+					<option>Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>Would you recommend freeCodeCamp to a friend?</p>
+				<label for="definitely">
+					<input type="radio" name="user-recommend" value="definitely" class="input-radio" checked >Definitely
+				</label>
+
+				<label for="maybe">
+					<input type="radio" name="user-recommend" value="maybe" class="input-radio">Maybe
+				</label>
+
+				<label for="notSure">
+					<input type="radio" name="user-recommend" value="not sure" class="input-radio">Not Sure
+				</label>
+
+			</div>
+			<div class="form-group">
+				<p>What is your favorite place in Spaces?</p>
+				<select id="dropdown" class="same-size">
+					<option>Select your favourite place</option>
+					<option>Kitchen</option>
+					<option>Balcony</option>
+					<option>Terrace</option>
+					<option>Working room</option>
+					<option>Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p>What would you like to see improved? (Check all that apply)</p>
+				<label>
+					<input type="checkbox" value="veried-menu" name="veried-menu" class="input-radio">Veried Menu
+				</label>
+				<label>
+					<input type="checkbox" value="wifi" name="wifi" class="input-checkbox">Wi-Fi
+				</label>
+				<label>
+					<input type="checkbox" value="more-printers" name="more-printers" class="input-checkbox">More Printers
+				</label>
+				<label>
+					<input type="checkbox" value="conference-room" name="onference-room" class="input-checkbox">Conference room
+				</label>
+				<label>
+					<input type="checkbox" value="more-coaches" name="more-coaches" class="input-checkbox">More Coaches
+				</label>
+				<label>
+					<input type="checkbox" value="manage-noise-levels" name="manage-noise-levels" class="input-checkbox">Manage noise levels
+				</label>
+			</div>
+			<div class="form-group">
+				<p>Any comments or suggestions?</p>
+				<textarea placeholder="Enter your comment here"></textarea>
+			</div>
+			<div class="form-group">
+				<input type="submit" name="Submit" value="Submit" id="submit" class="button">
+			</div>
+		</form>
+	</main>
+</body>
+</html>
