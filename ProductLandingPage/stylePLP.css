@@ -1,0 +1,190 @@
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+#header-img{
+	width: 17.5rem;
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width: 1000px){
+	#nav-bar ul{
+		font-size: 0.8em;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #eee;
+}
+
+#nav-bar ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+#nav-bar li{
+	padding-right: 80px;
+	font-size: 1.25em;
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+#nav-bar li:first-child{
+	margin-right: auto;
+	float: left;
+	padding-left: 0;
+}
+
+form h2{
+	margin-top: 60px;
+	text-align: center;
+}
+
+input{
+	display: flex;
+	margin: 15px auto;
+	max-width: 275px;
+	width: 100%;
+	height: 1.5rem;
+}
+
+.btn{
+	max-width: 150px;
+	width: 100%;
+	cursor: pointer;
+    text-align: center;
+    padding: 0 30px;
+	text-transform: uppercase;
+	font-weight: 900;
+	border: none;
+	background-color: #f1c40f;
+	margin-bottom: 70px;
+} 
+
+#features{
+	max-width: 1000px;
+ 	width: 100%;
+	margin: 0 auto;
+}
+
+.flex{
+	display: flex;
+}
+
+.img-div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 125px;
+	width: 20vw;
+}
+
+.text-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 125px;
+	width: 80vw;
+	padding: 5px;
+}
+
+.img{
+	width: 50px;
+}
+
+.subHead{
+	margin-bottom: 0;
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+
+.container{
+	display: grid;
+	max-width: 1000px;
+	margin: 50px auto 0 auto;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.zone{
+	border: 1px solid black;
+	max-width: 350px;
+}
+
+.head-text{
+	margin: 0 0 5px 0;
+	background-color: #bbb;
+	padding: 10px;
+	text-align: center;
+	font-weight: 600;
+} 
+
+.money{
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.5em;
+	margin: 5px 0 0 0;
+}
+
+.desc-div{
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+
+.select-btn{
+	max-width: 100px;
+	text-transform: uppercase;
+	height: 2rem;
+	padding: 0 25px;
+	background-color: #f1c40f;
+	border: none;
+	cursor: pointer;
+}
+
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+
