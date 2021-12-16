@@ -6,7 +6,9 @@ h1 {
 .robots {
 }
 
-/* Bestimmung der Farbe des Robots*/
+/*
+robot's color
+*/
 .head, .left_arm, .torso, .right_arm, .left_leg, .right_leg {
 	 background-color: #5f93e8;
 }
@@ -14,15 +16,8 @@ h1 {
 .head { 
 	width: 200px; 
 	height: 150px; 
-
-	/* Die Position des Kopfs ist im Zentrum */
 	margin: 0 auto;
-
-	/*  rechte obere Ecke, linke obere Ecke, 
-	rechte untere Ecke, linke untere Ecke*/
 	border-radius: 200px 200px 0 0; 
-
-	/* Die Entfernung des Kopfs vom Koerper */
 	margin-bottom: 10px;
 } 
 
@@ -31,10 +26,8 @@ h1 {
 }
 
 .head:hover {
-	/* Die Breite des Kopfes wird um 100 vergroessert */
 	width: 300px;
-	/* Hovering dauert 1 Sekunde */
-    transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
 }
 
 .upper_body { 
@@ -85,10 +78,10 @@ h1 {
 
 .left_leg:hover {
 	-webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    transform: rotate(20deg);
+    	-moz-transform: rotate(20deg);
+    	-o-transform: rotate(20deg);
+    	-ms-transform: rotate(20deg);
+    	transform: rotate(20deg);
 }
 
 .right_leg { 
@@ -114,8 +107,3 @@ h1 {
 	top: 80px; 
 	left: 50px; 
 }
-
-
-
-
-
