@@ -1,0 +1,127 @@
+.box{
+	text-align: center;
+	display: inline-block;
+	margin: 50px 50px;
+	padding: 70px;
+	background-color: #a0b3a8;
+	color: rgb(255, 255, 255);
+	transition: .2s linear;
+}
+
+.shadow-1{
+	background-color: #e6e3df;
+  	display: inline-block;
+
+  	/*
+  	inset steht dafuer, dass die Schatten nach inner gehen
+
+  	Die erste Zahl steht fuer die Laenge des Schattens
+  	auf der linken Seite
+
+  	Die zweite Zahl steht fuer die Laenge des Schattens
+  	von oben
+
+  	Die dritte Zahl steht fuer die Unschaerfe des Schattens
+
+  	Dann gibt man die Farbe ein (vierter Parameter ist
+  	Lichtungsdurchlaessigkeit)
+
+  	KOMA
+
+  	Die erste Zahl steht fuer die Laenge des Schattens
+  	auf der rechten Seite
+
+  	Die zweite Zahl steht fuer die Laenge des Schattens
+  	von unten
+
+  	Die dritte Zahl steht fuer die Unschaerfe des Schattens
+
+  	Dann gibt man die Farbe ein (vierter Parameter ist
+  	Lichtungsdurchlaessigkeit)
+  	*/
+  	box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(155, 146, 135, 1);
+}
+
+.shadow-2{
+	border-radius: 5px;
+	background: #55acee;
+
+	/*
+	Die erste Zahl beschreibt die Verschiebung von
+	links nach rechts
+
+	Die zweite Zahl steht fuer die Laenge des Schattens
+	auf unterer Seite
+
+	Die dritte Zahl sagt wie unscharf muss den 
+	Schatten sein
+
+	Die vierte Zahl steht fuer die Farbe des Schattens
+	*/
+	box-shadow: 0 5px 0 #3C93D5;
+	transition: 0.3s;
+}
+
+.shadow-2:hover{
+	cursor: pointer;
+	background: #6FC6FF;
+}
+
+.shadow-3{
+	background: white;
+	color: #bbb;
+
+	/*
+	Die erste Zahl steht fuer die Richtung des
+	Schattens von links nach rechts
+
+	Die zweite Zahl steht fuer die Darstellung des
+	Schattens in Richtung von oben nach unten
+
+	Die dritte Zahl steht fuer die Unschaerfe des Schattens
+
+	Dann gibt man die Farbe ein (vierter Parameter ist
+  	Lichtungsdurchlaessigkeit)
+
+  	KOMA
+
+
+	*/
+	box-shadow: 0 15px 25px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+
+.shadow-4{
+	background:#C1F1E4;
+}
+
+.shadow-4:hover{
+	box-shadow: 210px 0 0 0 rgba(0,0,0,.3) inset;
+}
+
+
+.shadow-5{
+	background:#3A2F28;
+	
+}
+
+.shadow-5:hover{
+	box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
+}
+
+
+.shadow-6{
+	background: #D2973D;
+	
+}
+
+.shadow-6:hover{
+	box-shadow: 0 0 0 2px #D2973D inset, 0 0 0 4px white inset;;
+}
+
+
+
+
+
+
