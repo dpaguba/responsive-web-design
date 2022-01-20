@@ -1,1 +1,171 @@
+/* 
+Man braucht das, damit es keine Leerplaetze gibt
+zwischen z.B. Navigation Bar und linker, rechtrer Seiten
+der Webseite.
+*/
+body{
+	margin: auto 0;
+}
 
+.zone{
+	font-size: 2rem;
+	color: whitesmoke;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.zone:first-child{
+	border: 1px solid #bbb;
+	border-radius: 5px;
+}
+
+.zone:last-child{
+	border-radius: 0;
+	border: none;
+}
+
+.zone:hover{
+	-webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* 
+----------------------------------------------------------
+	NAVIGATION BAR
+----------------------------------------------------------
+*/
+
+/*
+Common pattern to make navigation bar sticky.
+*/
+
+/*
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+*/
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+	.navbar ul{
+		font-size: 0.7em;
+		padding: 0;
+	}
+}
+
+.navbar li{
+	font-family: Arial;
+	padding: 15px;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 0.75em;
+}
+
+.navbar li:last-child{
+	margin-left: auto;
+	float: right;
+	padding-right: 30px;
+}
+
+.navbar li:hover{
+	/* I have to change the color */
+	background-color: #7abcff;
+}
+
+/*
+----------------------------------------------------------
+	COVER
+----------------------------------------------------------
+*/
+
+.cover{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 60vh;
+}
+
+.cover img{
+	width: 30rem;
+}
+
+/*
+----------------------------------------------------------
+	CONTENT - PROJECT GRID
+----------------------------------------------------------
+*/
+.content{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.content img{
+	width: 100%;
+}
+
+.content div{
+	background-color: #444;
+	margin: 20px;
+	padding: 120px;
+}
+
+/*
+----------------------------------------------------------
+	CONTENT - PROJECT GRID
+----------------------------------------------------------
+*/
+
+.footer{
+	text-align: center;
+	font-size: 1.2rem;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #444;
+}
+
+/*
+	Gradient colors for each block: 
+*/
+
+.navbar{
+	background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+.blue{
+	background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+.yellow{
+	background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
