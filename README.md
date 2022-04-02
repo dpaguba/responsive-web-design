@@ -21,4 +21,6 @@ In order to view all projects in the IDE, you need to download the repository or
 	2. Click on it and copy the address to the repository
 	3. Open the console and use the git clone <repository link> command to clone the repository
 
+
+
 If you have any questions, please contact me through the social networks indicated in my profile.
