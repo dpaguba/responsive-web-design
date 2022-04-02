@@ -1,5 +1,3 @@
-# responsive-web-design
-
 ## Purpose of this project:
 
 The ***Responsive Web Design*** project was created to improve my HTML & CSS skills.
